@@ -81,9 +81,6 @@ class AnimalTest {
       e.attack();
       /*numberOfKills is a private variable, so you can't print it. */
 
-      b = a; 
-      b.talk(); 
-      b.fly();
    }
 }
 

@@ -1,15 +1,9 @@
-class XWing {
+abstract class SpaceShip {
 
    // Properties of the class...
-   private int     shields;
-   private int     weapon;
-   private boolean dead;
-
-   // Constructor of the class...
-   public XWing() {
-      shields = 1000;
-      weapon  = 10;
-   }
+   protected int     shields;
+   protected int     weapon;
+   protected boolean dead;
 
    // Methods of the class...
    public int getWeapon() {
@@ -27,32 +21,21 @@ class XWing {
    }
 }
 
-class Tie {
+class XWing extends SpaceShip {
 
-   // Properties of the class...
-   private int shields;
-   private int weapon;
-   private boolean dead;
+   // Constructor of the class...
+   public XWing() {
+      shields = 1000;
+      weapon  = 10;
+   }
+}
+
+class Tie extends SpaceShip {
   
    // Constructor of the class...
    public Tie() {
       shields = 500;
       weapon  = 20;
-   }
-   
-   // Methods of the class...
-   public int getWeapon() {
-      return weapon;
-   }
-   public boolean isDead() {
-      return dead;
-   }
-   public void hit(int damage) {
-      shields = shields - damage;
-      if (shields < 0) {
-         System.out.println("BOOM!!!");
-         dead = true;
-      }
    }
 }
 
