@@ -5,7 +5,7 @@ Student Number: 10529136
 
 Week: 1
 
-Exercise 11 of the java tutorial for c programmers. 
+Exercise 11 of the java tutorial for c programmers. I already have Java experience and started whit the last exercise. This went well.
 
 1. Theoretical example of inheritance
 -------------------------------------
@@ -16,3 +16,5 @@ f). it will give an error in b = a. Bird is of the type animal, so b can be stor
 
 2. practical eample of inheritance
 ----------------------------------
+
+answers are all in the code
