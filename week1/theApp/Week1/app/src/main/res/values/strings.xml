@@ -10,4 +10,5 @@
     <string name="toLow">The number is higher, try again</string>
     <string name="toHigh">The number is lower, try again</string>
     <string name="end">YOU WON! enter number to play again!</string>
+    <string name="noNumber">You did not enter a number</string>
 </resources>
