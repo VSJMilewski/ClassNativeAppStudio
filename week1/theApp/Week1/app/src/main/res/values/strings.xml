@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Number Game</string>
+    <string name="action_settings">Settings</string>
+    <string name="enter">Enter</string>
+    <string name="background">Change Background</string>
+    <string name="field">Your Number</string>
+    <string name="startText">Enter a number between 0 and 100</string>
+    <string name="count">Guesses: </string>
+    <string name="best">Best Score: </string>
+    <string name="toLow">The number is higher, try again</string>
+    <string name="toHigh">The number is lower, try again</string>
+    <string name="end">YOU WON! enter number to play again!</string>
+</resources>
