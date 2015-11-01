@@ -1,5 +1,5 @@
 # ClassNativeAppStudio
-NAME: Victor Milewski 
+NAME: Victor Milewski (victormilewski@gmail.com)
 
 Student Number: 10529136
 
