@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Four_in_a_Row</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_background">Change Background</string>
+
+    <string name="welcome">Welcome to Four in a Row!</string>
+    <string name="two_player">Player1 vs Player2</string>
+    <string name="pc">Player1 vs PC</string>
+    <string name="title_activity_four_row">FourRowActivity</string>
+</resources>
