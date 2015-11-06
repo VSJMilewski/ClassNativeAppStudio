@@ -27,4 +27,16 @@
         android:id="@+id/ButtonList"
         android:orientation="horizontal">
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/turn"
+        android:textSize="28dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/score"
+        android:textSize="32dp"/>
 </LinearLayout>

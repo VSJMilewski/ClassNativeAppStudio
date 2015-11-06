@@ -23,7 +23,7 @@ public class MenuActivity extends AppCompatActivity {
     //An int array with a few color numbers stored in it
     private static int[] COLORS = {Color.RED, Color.GREEN, Color.GRAY, Color.BLUE, Color.LTGRAY, Color.WHITE, Color.CYAN};
 
-    //A random generator used at a few locations
+    //A random generator
     private Random RAND = new Random();
 
     @Override
@@ -33,10 +33,15 @@ public class MenuActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        //add a listener for both buttons
         Button twoPlyr = (Button) findViewById(R.id.button2ply);
         Button onePc = (Button) findViewById(R.id.button1pc);
         twoPlyr.setOnClickListener(nextActivityListener);
         onePc.setOnClickListener(nextActivityListener);
+
+        //reset score for the next game
+        FourRowActivity.player1wins = 0;
+        FourRowActivity.player2wins = 0;
     }
 
     @Override
@@ -66,6 +71,8 @@ public class MenuActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    //the click listener for both buttons. It starts the game for 2 players ore one player
+    //depending on the prest button
     private View.OnClickListener nextActivityListener = new View.OnClickListener() {
         public void onClick(View view) {
 
@@ -76,7 +83,7 @@ public class MenuActivity extends AppCompatActivity {
                     break;
                 case R.id.button1pc:
                     //start game for one player
-                    //not implemented, dont forget
+                    //not implemented
                     Toast.makeText(getApplicationContext(), "not yet available",
                             Toast.LENGTH_LONG).show();
                     break;

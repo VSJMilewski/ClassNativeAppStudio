@@ -39,22 +39,27 @@ public class CellView extends ImageView {
         super(context, attrs, defStyleAttr);
     }
 
+    //returns the row
     public int getRow() {
         return ROW;
     }
 
+    //returns the column
     public int getCol() {
         return COLUMN;
     }
 
+    //returns if there is a coin in this cell
     public boolean isFree() {
         return FREE;
     }
 
+    //returns the player from who the coin is
     public int getPlayer() {
         return PLAYER;
     }
 
+    //places a coin in this cell, and tries to let the coin fall further down
     public int drop(boolean player1) {
         int lastRow = ROW;
         if (player1) {
@@ -67,11 +72,13 @@ public class CellView extends ImageView {
             super.setImageResource(R.drawable.player2_cell);
         }
 
+        //try to let the coin fall in the next row
         if (ROW != FourRowActivity.board.getRowCount()) {
             for (CellView cell : FourRowActivity.cells) {
                 int c = cell.getCol();
                 int r = cell.getRow();
                 if (c == COLUMN && r == ROW + 1) {
+                    //the coin can still fall further down
                     if(cell.isFree()) {
                         FREE = true;
                         super.setImageResource(R.drawable.empty_cell);
