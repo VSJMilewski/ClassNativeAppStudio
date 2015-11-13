@@ -38,10 +38,6 @@ public class MenuActivity extends AppCompatActivity {
         Button onePc = (Button) findViewById(R.id.button1pc);
         twoPlyr.setOnClickListener(nextActivityListener);
         onePc.setOnClickListener(nextActivityListener);
-
-        //reset score for the next game
-        FourRowActivity.player1wins = 0;
-        FourRowActivity.player2wins = 0;
     }
 
     @Override
@@ -82,10 +78,10 @@ public class MenuActivity extends AppCompatActivity {
                     startActivity(new Intent(MenuActivity.this, FourRowActivity.class));
                     break;
                 case R.id.button1pc:
-                    //start game for one player
-                    //not implemented
-                    Toast.makeText(getApplicationContext(), "not yet available",
-                            Toast.LENGTH_LONG).show();
+                    //start game with an bot
+                    Intent intent = new Intent(MenuActivity.this, FourRowActivity.class);
+                    intent.putExtra("pc",true);
+                    startActivity(intent);
                     break;
                 default:
                     break;
