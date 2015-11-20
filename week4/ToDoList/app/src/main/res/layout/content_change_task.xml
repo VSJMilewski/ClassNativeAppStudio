@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_change_task"
+    tools:context="com.nativeappstudio.milewski_10529136.todolist.ChangeTaskActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="fill_parent"
+            android:text="The Task: "/>
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:inputType="text"
+            android:id="@+id/changeTitle"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="fill_parent"
+            android:text="The Description: "/>
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:inputType="text"
+            android:lines="5"
+            android:id="@+id/changeDescription"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="fill_parent"
+            android:text="The Priority: "/>
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="High"
+                android:id="@+id/high"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Normal"
+                android:id="@+id/normal"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Low"
+                android:id="@+id/low"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="None"
+                android:id="@+id/none"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>

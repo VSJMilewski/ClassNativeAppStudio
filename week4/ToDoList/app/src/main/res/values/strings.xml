@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ToDoList</string>
+    <string name="action_settings">Settings</string>
+    <string name="new_task">Enter the new Task:</string>
+    <string name="save_button">Save Task</string>
+    <string name="title_activity_change_task">ChangeTaskActivity</string>
+    <string name="remove">Hold to remove task</string>
+</resources>
